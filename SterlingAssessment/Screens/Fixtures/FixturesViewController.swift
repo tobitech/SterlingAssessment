@@ -11,6 +11,7 @@ import UIKit
 class FixturesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    var refreshControl: UIRefreshControl!
     
     var viewModel: FixturesListViewModel!
 
@@ -26,6 +27,7 @@ class FixturesViewController: UIViewController {
         viewModel.didLoadFixtures = {[weak self] matches, message in
 
             DispatchQueue.main.async {
+                self?.refreshControl.endRefreshing()
                 self?.tableView.reloadData()
                 
                 if let message = message {
@@ -36,6 +38,10 @@ class FixturesViewController: UIViewController {
     }
     
     private func setupTableView() {
+        self.refreshControl = UIRefreshControl(frame: .zero)
+        tableView.refreshControl = self.refreshControl
+        self.refreshControl.beginRefreshing()
+        
         tableView.register(cellType: MatchTableViewCell.self)
         
         tableView.tableFooterView = UIView()

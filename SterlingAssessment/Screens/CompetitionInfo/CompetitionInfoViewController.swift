@@ -44,10 +44,15 @@ extension CompetitionInfoViewController: UICollectionViewDataSource, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withCellType: CompetitionTableInfoCell.self, forIndexPath: indexPath)
-        
-        cell.viewModel = CompetitionTableInfoViewModel(competitionId: viewModel.competition.id ?? 0)
-        return cell
+        switch indexPath.item {
+        case 0:
+            let cellViewModel = CompetitionTableInfoViewModel(competitionId: viewModel.competition.id ?? 0)
+            let cell = collectionView.dequeueReusableCell(withCellType: CompetitionTableInfoCell.self, forIndexPath: indexPath)
+            cell.viewModel = cellViewModel
+            return cell
+        default:
+            return UICollectionViewCell()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

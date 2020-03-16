@@ -9,7 +9,7 @@
 import UIKit
 
 class CompetitionsViewController: UITableViewController {
-        
+    
     var viewModel: CompetitionsListViewModel!
     
     override func viewDidLoad() {
@@ -23,6 +23,7 @@ class CompetitionsViewController: UITableViewController {
         viewModel = CompetitionsListViewModel()
         viewModel.didLoadCompetitions = {[weak self] competitions, message in
             DispatchQueue.main.async {
+                self?.tableView.refreshControl?.endRefreshing()
                 self?.tableView.reloadData()
                 
                 if let message = message {
@@ -33,6 +34,9 @@ class CompetitionsViewController: UITableViewController {
     }
     
     private func setupTableView() {
+        tableView.refreshControl = UIRefreshControl(frame: .zero)
+        tableView.refreshControl?.beginRefreshing()
+        
         tableView.register(cellType: CompetitionCell.self)
         tableView.tableFooterView = UIView()
     }
