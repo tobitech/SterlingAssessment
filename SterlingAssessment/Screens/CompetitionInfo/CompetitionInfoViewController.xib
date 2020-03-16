@@ -21,17 +21,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WqY-PC-l19">
-                    <rect key="frame" x="16" y="16" width="343" height="32"/>
+                    <rect key="frame" x="8" y="8" width="359" height="32"/>
                     <segments>
                         <segment title="Table"/>
                         <segment title="Fixtures"/>
                         <segment title="Teams"/>
                     </segments>
                 </segmentedControl>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-MM-Pg4">
-                    <rect key="frame" x="0.0" y="55" width="375" height="612"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-MM-Pg4">
+                    <rect key="frame" x="0.0" y="47" width="375" height="620"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eW0-2t-6Ua">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="eW0-2t-6Ua">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -42,11 +42,11 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="9cE-MM-Pg4" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3Pk-FX-fAI"/>
-                <constraint firstItem="WqY-PC-l19" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3lA-6m-LEc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WqY-PC-l19" secondAttribute="trailing" constant="16" id="BdV-3g-rdY"/>
+                <constraint firstItem="WqY-PC-l19" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="3lA-6m-LEc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WqY-PC-l19" secondAttribute="trailing" constant="8" id="BdV-3g-rdY"/>
                 <constraint firstItem="9cE-MM-Pg4" firstAttribute="top" secondItem="WqY-PC-l19" secondAttribute="bottom" constant="8" id="Yby-HT-aH9"/>
                 <constraint firstItem="9cE-MM-Pg4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dtv-su-761"/>
-                <constraint firstItem="WqY-PC-l19" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="ohI-Kp-Jqg"/>
+                <constraint firstItem="WqY-PC-l19" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="ohI-Kp-Jqg"/>
                 <constraint firstItem="9cE-MM-Pg4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="syi-cT-LvR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -27,6 +27,8 @@
 		20C22BD2241FB6D4006C0ED9 /* CompetitionInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BD0241FB6D4006C0ED9 /* CompetitionInfoViewController.swift */; };
 		20C22BD3241FB6D4006C0ED9 /* CompetitionInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C22BD1241FB6D4006C0ED9 /* CompetitionInfoViewController.xib */; };
 		20C22BD5241FBA3B006C0ED9 /* CompetitionInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BD4241FBA3B006C0ED9 /* CompetitionInfoViewModel.swift */; };
+		20C22BD9241FBE87006C0ED9 /* CompetitionInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BD7241FBE87006C0ED9 /* CompetitionInfoCell.swift */; };
+		20C22BDA241FBE87006C0ED9 /* CompetitionInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C22BD8241FBE87006C0ED9 /* CompetitionInfoCell.xib */; };
 		20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00B241F5968008AFC88 /* AppDelegate.swift */; };
 		20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00F241F5968008AFC88 /* FixturesViewController.swift */; };
 		20C2A013241F5968008AFC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C2A011241F5968008AFC88 /* Main.storyboard */; };
@@ -70,6 +72,8 @@
 		20C22BD0241FB6D4006C0ED9 /* CompetitionInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionInfoViewController.swift; sourceTree = "<group>"; };
 		20C22BD1241FB6D4006C0ED9 /* CompetitionInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompetitionInfoViewController.xib; sourceTree = "<group>"; };
 		20C22BD4241FBA3B006C0ED9 /* CompetitionInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionInfoViewModel.swift; sourceTree = "<group>"; };
+		20C22BD7241FBE87006C0ED9 /* CompetitionInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionInfoCell.swift; sourceTree = "<group>"; };
+		20C22BD8241FBE87006C0ED9 /* CompetitionInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompetitionInfoCell.xib; sourceTree = "<group>"; };
 		20C2A008241F5968008AFC88 /* SterlingAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SterlingAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C2A00B241F5968008AFC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C2A00F241F5968008AFC88 /* FixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 		20C22BD6241FBAFD006C0ED9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				20C22BD7241FBE87006C0ED9 /* CompetitionInfoCell.swift */,
+				20C22BD8241FBE87006C0ED9 /* CompetitionInfoCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C22BD3241FB6D4006C0ED9 /* CompetitionInfoViewController.xib in Resources */,
+				20C22BDA241FBE87006C0ED9 /* CompetitionInfoCell.xib in Resources */,
 				20C22BCE241FB3C7006C0ED9 /* CompetitionCell.xib in Resources */,
 				202EC68B241F828D00E1570F /* MatchTableViewCell.xib in Resources */,
 				202EC67B241F7C2600E1570F /* FixturesViewController.xib in Resources */,
@@ -403,6 +410,7 @@
 				202EC679241F71C200E1570F /* Extensions.swift in Sources */,
 				202EC676241F6A1200E1570F /* Match.swift in Sources */,
 				202EC671241F65C500E1570F /* TabBarController.swift in Sources */,
+				20C22BD9241FBE87006C0ED9 /* CompetitionInfoCell.swift in Sources */,
 				20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */,
 				202EC682241F7FBF00E1570F /* UITableView+Identifiable.swift in Sources */,
 				20C2A02C241F6274008AFC88 /* Constants.swift in Sources */,
