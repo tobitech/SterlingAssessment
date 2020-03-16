@@ -19,6 +19,12 @@ struct Match: Decodable {
     let competition: Competition
     let score: Score
     let utcDate: String?
+    let homeTeam: Team?
+    let awayTeam: Team?
+}
+
+struct Team: Decodable {
+    let name: String?
 }
 
 struct Score: Decodable {

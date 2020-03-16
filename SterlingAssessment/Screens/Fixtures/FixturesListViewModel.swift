@@ -47,4 +47,22 @@ class FixturesListViewModel {
         return self.fixtures.count
     }
     
+    func viewModelForCell(at indexPath: IndexPath) -> MatchViewModel? {
+        guard indexPath.row < fixtures.count else { return nil }
+        let match = fixtures[indexPath.row]
+        let vm = MatchViewModel(
+            homeTeam: match.homeTeam?.name ?? "",
+            awayTeam: match.awayTeam?.name ?? "",
+            homeTeamScore: "\(match.score.fullTime.homeTeam ?? 0)",
+            awayTeamScore: "\(match.score.fullTime.awayTeam ?? 0)",
+            matchTime: formatDate(utcDate: match.utcDate ?? "") ?? "-:-",
+            currentTime: "00\""
+        )
+        return vm
+    }
+    
+    private func formatDate(utcDate: String) -> String? {
+        guard let date = DateFormatter.football.date(from: utcDate) else { return nil }
+        return DateFormatter.fixture.string(from: date)
+    }
 }

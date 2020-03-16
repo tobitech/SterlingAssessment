@@ -21,3 +21,14 @@ extension UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 }
+
+extension DateFormatter {
+    static let football = DateFormatter(dateFormat: "yyyy-MM-dd'T'HH:mm:ssZ")
+    
+    static let fixture = DateFormatter(dateFormat: "HH:mm")
+    
+    convenience init (dateFormat: String) {
+        self.init()
+        self.dateFormat = dateFormat
+    }
+}
