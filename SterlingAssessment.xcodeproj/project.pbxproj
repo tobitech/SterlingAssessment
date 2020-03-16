@@ -16,7 +16,18 @@
 		20C2A027241F5CB0008AFC88 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A026241F5CB0008AFC88 /* NetworkService.swift */; };
 		20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A029241F5E77008AFC88 /* Competition.swift */; };
 		20C2A02C241F6274008AFC88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A02B241F6274008AFC88 /* Constants.swift */; };
+		20C2A034241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A033241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20C2A036241F64DB008AFC88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20C2A000241F5968008AFC88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20C2A007241F5968008AFC88;
+			remoteInfo = SterlingAssessment;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		20C2A008241F5968008AFC88 /* SterlingAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SterlingAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,20 @@
 		20C2A026241F5CB0008AFC88 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		20C2A029241F5E77008AFC88 /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
 		20C2A02B241F6274008AFC88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		20C2A031241F64DB008AFC88 /* SterlingAssessmentUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SterlingAssessmentUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C2A033241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SterlingAssessmentUnitTests.swift; sourceTree = "<group>"; };
+		20C2A035241F64DB008AFC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		20C2A005241F5968008AFC88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20C2A02E241F64DB008AFC88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				20C2A00A241F5968008AFC88 /* SterlingAssessment */,
+				20C2A032241F64DB008AFC88 /* SterlingAssessmentUnitTests */,
 				20C2A009241F5968008AFC88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				20C2A008241F5968008AFC88 /* SterlingAssessment.app */,
+				20C2A031241F64DB008AFC88 /* SterlingAssessmentUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +147,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		20C2A032241F64DB008AFC88 /* SterlingAssessmentUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				20C2A033241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift */,
+				20C2A035241F64DB008AFC88 /* Info.plist */,
+			);
+			path = SterlingAssessmentUnitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +176,24 @@
 			productReference = 20C2A008241F5968008AFC88 /* SterlingAssessment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		20C2A030241F64DB008AFC88 /* SterlingAssessmentUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20C2A038241F64DB008AFC88 /* Build configuration list for PBXNativeTarget "SterlingAssessmentUnitTests" */;
+			buildPhases = (
+				20C2A02D241F64DB008AFC88 /* Sources */,
+				20C2A02E241F64DB008AFC88 /* Frameworks */,
+				20C2A02F241F64DB008AFC88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20C2A037241F64DB008AFC88 /* PBXTargetDependency */,
+			);
+			name = SterlingAssessmentUnitTests;
+			productName = SterlingAssessmentUnitTests;
+			productReference = 20C2A031241F64DB008AFC88 /* SterlingAssessmentUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +206,10 @@
 				TargetAttributes = {
 					20C2A007241F5968008AFC88 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					20C2A030241F64DB008AFC88 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 20C2A007241F5968008AFC88;
 					};
 				};
 			};
@@ -173,6 +227,7 @@
 			projectRoot = "";
 			targets = (
 				20C2A007241F5968008AFC88 /* SterlingAssessment */,
+				20C2A030241F64DB008AFC88 /* SterlingAssessmentUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +240,13 @@
 				20C2A018241F5969008AFC88 /* LaunchScreen.storyboard in Resources */,
 				20C2A015241F5969008AFC88 /* Assets.xcassets in Resources */,
 				20C2A013241F5968008AFC88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20C2A02F241F64DB008AFC88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +266,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20C2A02D241F64DB008AFC88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C2A034241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20C2A037241F64DB008AFC88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20C2A007241F5968008AFC88 /* SterlingAssessment */;
+			targetProxy = 20C2A036241F64DB008AFC88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		20C2A011241F5968008AFC88 /* Main.storyboard */ = {
@@ -378,6 +456,46 @@
 			};
 			name = Release;
 		};
+		20C2A039241F64DB008AFC88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8A5ZAM5GV;
+				INFOPLIST_FILE = SterlingAssessmentUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oluwatobiomotayo.SterlingAssessmentUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SterlingAssessment.app/SterlingAssessment";
+			};
+			name = Debug;
+		};
+		20C2A03A241F64DB008AFC88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8A5ZAM5GV;
+				INFOPLIST_FILE = SterlingAssessmentUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oluwatobiomotayo.SterlingAssessmentUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SterlingAssessment.app/SterlingAssessment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +513,15 @@
 			buildConfigurations = (
 				20C2A01D241F5969008AFC88 /* Debug */,
 				20C2A01E241F5969008AFC88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20C2A038241F64DB008AFC88 /* Build configuration list for PBXNativeTarget "SterlingAssessmentUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20C2A039241F64DB008AFC88 /* Debug */,
+				20C2A03A241F64DB008AFC88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
