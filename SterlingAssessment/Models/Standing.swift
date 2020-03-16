@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct StandingsResponse: Decodable {
+    let standings: [Standing]?
+}
+
+struct Standing: Decodable {
+    let type: String?
+    let table: [Table]?
+}
+
+struct Table: Decodable {
+    let position: Int?
+    let team: Team?
+    let playedGames: Int?
+    let goalDifference: Int?
+    let points: Int?
+}

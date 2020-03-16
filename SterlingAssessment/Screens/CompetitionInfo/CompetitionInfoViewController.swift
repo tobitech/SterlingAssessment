@@ -26,7 +26,7 @@ class CompetitionInfoViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        collectionView.register(cellType: CompetitionInfoCell.self)
+        collectionView.register(cellType: CompetitionTableInfoCell.self)
         collectionView.isPagingEnabled = true
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -44,8 +44,9 @@ extension CompetitionInfoViewController: UICollectionViewDataSource, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withCellType: CompetitionInfoCell.self, forIndexPath: indexPath)
-        cell.backgroundColor = [UIColor.black, .blue, .orange][indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withCellType: CompetitionTableInfoCell.self, forIndexPath: indexPath)
+        
+        cell.viewModel = CompetitionTableInfoViewModel(competitionId: viewModel.competition.id ?? 0)
         return cell
     }
     

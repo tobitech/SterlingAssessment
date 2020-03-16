@@ -25,6 +25,7 @@ struct Match: Decodable {
 
 struct Team: Decodable {
     let name: String?
+    let crestUrl: String?
 }
 
 struct Score: Decodable {

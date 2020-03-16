@@ -13,8 +13,7 @@ class CompetitionInfoViewModel {
     // MARK: Output
     var name: String
     
-    // MARK: Private
-    private let competition: Competition
+    let competition: Competition
     
     // MARK: Init
     init(competition: Competition) {

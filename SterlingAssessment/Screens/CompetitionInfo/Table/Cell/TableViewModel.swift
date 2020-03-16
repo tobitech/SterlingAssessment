@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct TableViewModel {
+    let position: String
+    let crest: String
+    let teamName: String
+    let matchPlayed: String
+    let goalDifference: String
+    let points: String
+}

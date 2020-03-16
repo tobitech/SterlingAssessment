@@ -27,6 +27,13 @@ extension Endpoint {
             queryItems: []
         )
     }
+    
+    static func competitionStandings(competitionId: Int) -> Endpoint {
+        return Endpoint(
+            path: "competitions/\(competitionId)/standings",
+            queryItems: []
+        )
+    }
 }
 
 extension Endpoint {
