@@ -49,4 +49,13 @@ extension CompetitionsViewController {
         cell.textLabel?.text = viewModel.titleForCompetition(at: indexPath)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let competition = viewModel.competition(at: indexPath.row) else { return }
+        let vm = CompetitionInfoViewModel(competition: competition)
+        let vc = CompetitionInfoViewController.initFromNib()
+        vc.viewModel = vm
+
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

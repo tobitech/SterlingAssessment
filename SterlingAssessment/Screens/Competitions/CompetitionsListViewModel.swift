@@ -43,14 +43,19 @@ class CompetitionsListViewModel {
     }
     
     // MARK: Public Methods
+    func competition(at index: Int) -> Competition? {
+        guard index < competitions.count else { return nil }
+        return competitions[index]
+    }
+    
     func numberOfItems() -> Int {
         return self.competitions.count
     }
     
     func titleForCompetition(at indexPath: IndexPath) -> String? {
-        guard indexPath.row < self.competitions.count else { return nil }
+        guard let competition = competition(at: indexPath.row) else { return nil }
         
-        return competitions[indexPath.row].name ?? ""
+        return competition.name ?? ""
     }
     
 }
