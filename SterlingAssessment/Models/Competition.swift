@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct CompetitionsResponse: Decodable {
+    let competitions: [Competition]
+}
+
 struct Competition: Decodable {
     let id: Int?
     let name: String?

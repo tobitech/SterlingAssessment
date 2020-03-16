@@ -16,9 +16,6 @@ class FixturesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        
-        title = "Fixtures"
         
         setupViewModel()
         setupTableView()

@@ -18,20 +18,28 @@ class TabBarController: UITabBarController {
     
     private func setupViewControllers() {
         // Fixtures
-        let vc = FixturesViewController.initFromNib()
-        let fixturesNavController = templateNavController(image: UIImage(named: "soccer_icon") ?? UIImage(), rootViewController: vc)
+        let fixtVC = FixturesViewController.initFromNib()
+        let fixturesNavController = templateNavController(title: "Fixtures", image: UIImage(named: "soccer_icon") ?? UIImage(), rootViewController: fixtVC)
         
         // Competitions
-        let competitionsNavController = templateNavController(image: UIImage(named: "soccer_field_icon") ?? UIImage(), rootViewController: UIViewController())
+        let compVC = CompetitionsViewController.initFromNib()
+        
+        let competitionsNavController = templateNavController(title: "Competitions", image: UIImage(named: "soccer-field_icon") ?? UIImage(), rootViewController: compVC)
         
         viewControllers = [fixturesNavController, competitionsNavController]
         tabBar.tintColor = .black
         tabBar.unselectedItemTintColor = .gray
     }
     
-    private func templateNavController(image: UIImage, rootViewController: UIViewController = UIViewController()) -> UINavigationController {
+    private func templateNavController(
+        title: String,
+        image: UIImage,
+        rootViewController: UIViewController = UIViewController())
+        -> UINavigationController {
         
         let viewController = rootViewController
+        viewController.title = title
+            
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.barTintColor = .white
         navController.tabBarItem.image = image

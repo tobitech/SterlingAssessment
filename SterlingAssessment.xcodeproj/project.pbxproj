@@ -19,6 +19,11 @@
 		202EC687241F826400E1570F /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC686241F826400E1570F /* MatchViewModel.swift */; };
 		202EC68A241F828D00E1570F /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC688241F828D00E1570F /* MatchTableViewCell.swift */; };
 		202EC68B241F828D00E1570F /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202EC689241F828D00E1570F /* MatchTableViewCell.xib */; };
+		20C22BC2241FAA29006C0ED9 /* CompetitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BC0241FAA29006C0ED9 /* CompetitionsViewController.swift */; };
+		20C22BC3241FAA29006C0ED9 /* CompetitionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C22BC1241FAA29006C0ED9 /* CompetitionsViewController.xib */; };
+		20C22BC5241FAD4C006C0ED9 /* CompetitionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BC4241FAD4C006C0ED9 /* CompetitionsListViewModel.swift */; };
+		20C22BCD241FB3C7006C0ED9 /* CompetitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BCB241FB3C7006C0ED9 /* CompetitionCell.swift */; };
+		20C22BCE241FB3C7006C0ED9 /* CompetitionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C22BCC241FB3C7006C0ED9 /* CompetitionCell.xib */; };
 		20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00B241F5968008AFC88 /* AppDelegate.swift */; };
 		20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00F241F5968008AFC88 /* FixturesViewController.swift */; };
 		20C2A013241F5968008AFC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C2A011241F5968008AFC88 /* Main.storyboard */; };
@@ -54,6 +59,11 @@
 		202EC686241F826400E1570F /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
 		202EC688241F828D00E1570F /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		202EC689241F828D00E1570F /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		20C22BC0241FAA29006C0ED9 /* CompetitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewController.swift; sourceTree = "<group>"; };
+		20C22BC1241FAA29006C0ED9 /* CompetitionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompetitionsViewController.xib; sourceTree = "<group>"; };
+		20C22BC4241FAD4C006C0ED9 /* CompetitionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsListViewModel.swift; sourceTree = "<group>"; };
+		20C22BCB241FB3C7006C0ED9 /* CompetitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionCell.swift; sourceTree = "<group>"; };
+		20C22BCC241FB3C7006C0ED9 /* CompetitionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompetitionCell.xib; sourceTree = "<group>"; };
 		20C2A008241F5968008AFC88 /* SterlingAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SterlingAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C2A00B241F5968008AFC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C2A00F241F5968008AFC88 /* FixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +139,26 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		20C22BBF241FA9EB006C0ED9 /* Competitions */ = {
+			isa = PBXGroup;
+			children = (
+				20C22BC6241FB073006C0ED9 /* Cell */,
+				20C22BC4241FAD4C006C0ED9 /* CompetitionsListViewModel.swift */,
+				20C22BC0241FAA29006C0ED9 /* CompetitionsViewController.swift */,
+				20C22BC1241FAA29006C0ED9 /* CompetitionsViewController.xib */,
+			);
+			path = Competitions;
+			sourceTree = "<group>";
+		};
+		20C22BC6241FB073006C0ED9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				20C22BCB241FB3C7006C0ED9 /* CompetitionCell.swift */,
+				20C22BCC241FB3C7006C0ED9 /* CompetitionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		20C29FFF241F5968008AFC88 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +223,7 @@
 			children = (
 				202EC670241F65C500E1570F /* TabBarController.swift */,
 				202EC672241F691A00E1570F /* Fixtures */,
+				20C22BBF241FA9EB006C0ED9 /* Competitions */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -305,8 +336,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C22BCE241FB3C7006C0ED9 /* CompetitionCell.xib in Resources */,
 				202EC68B241F828D00E1570F /* MatchTableViewCell.xib in Resources */,
 				202EC67B241F7C2600E1570F /* FixturesViewController.xib in Resources */,
+				20C22BC3241FAA29006C0ED9 /* CompetitionsViewController.xib in Resources */,
 				20C2A018241F5969008AFC88 /* LaunchScreen.storyboard in Resources */,
 				20C2A015241F5969008AFC88 /* Assets.xcassets in Resources */,
 				20C2A013241F5968008AFC88 /* Main.storyboard in Resources */,
@@ -329,10 +362,13 @@
 			files = (
 				202EC684241F7FDA00E1570F /* UICollectionView+Identifiable.swift in Sources */,
 				202EC680241F7F7600E1570F /* ClassIdentifiable.swift in Sources */,
+				20C22BC5241FAD4C006C0ED9 /* CompetitionsListViewModel.swift in Sources */,
 				202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */,
 				202EC68A241F828D00E1570F /* MatchTableViewCell.swift in Sources */,
 				20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */,
 				20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */,
+				20C22BCD241FB3C7006C0ED9 /* CompetitionCell.swift in Sources */,
+				20C22BC2241FAA29006C0ED9 /* CompetitionsViewController.swift in Sources */,
 				20C2A025241F5C8E008AFC88 /* Endpoints.swift in Sources */,
 				20C2A027241F5CB0008AFC88 /* NetworkService.swift in Sources */,
 				202EC687241F826400E1570F /* MatchViewModel.swift in Sources */,

@@ -11,7 +11,7 @@ import Foundation
 class FixturesListViewModel {
     
     // MARK: Output
-    var fixtures: [Match] {
+    private var fixtures: [Match] {
         didSet {
             self.didLoadFixtures?(fixtures, nil)
         }
@@ -19,7 +19,7 @@ class FixturesListViewModel {
     var didLoadFixtures: (([Match]?, String?) -> Void)?
     
     // MARK: Private Properties
-    let service: NetworkService
+    private let service: NetworkService
     
     // MARK: Init
     init(service: NetworkService = NetworkService()) {
@@ -61,6 +61,7 @@ class FixturesListViewModel {
         return vm
     }
     
+    // MARK: Helpers
     private func formatDate(utcDate: String) -> String? {
         guard let date = DateFormatter.football.date(from: utcDate) else { return nil }
         return DateFormatter.fixture.string(from: date)
