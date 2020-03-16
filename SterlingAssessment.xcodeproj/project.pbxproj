@@ -19,6 +19,10 @@
 		202EC687241F826400E1570F /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC686241F826400E1570F /* MatchViewModel.swift */; };
 		202EC68A241F828D00E1570F /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC688241F828D00E1570F /* MatchTableViewCell.swift */; };
 		202EC68B241F828D00E1570F /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202EC689241F828D00E1570F /* MatchTableViewCell.xib */; };
+		20842F772420178A006F3A57 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20842F752420178A006F3A57 /* TeamCell.swift */; };
+		20842F782420178A006F3A57 /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20842F762420178A006F3A57 /* TeamCell.xib */; };
+		20842F7A2420179E006F3A57 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20842F792420179E006F3A57 /* TeamViewModel.swift */; };
+		20842F7C24201955006F3A57 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20842F7B24201955006F3A57 /* Team.swift */; };
 		20C22BC2241FAA29006C0ED9 /* CompetitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BC0241FAA29006C0ED9 /* CompetitionsViewController.swift */; };
 		20C22BC3241FAA29006C0ED9 /* CompetitionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C22BC1241FAA29006C0ED9 /* CompetitionsViewController.xib */; };
 		20C22BC5241FAD4C006C0ED9 /* CompetitionsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BC4241FAD4C006C0ED9 /* CompetitionsListViewModel.swift */; };
@@ -36,7 +40,7 @@
 		20C22BF024201545006C0ED9 /* TeamsInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BEF24201545006C0ED9 /* TeamsInfoViewModel.swift */; };
 		20C22BF324201638006C0ED9 /* TeamsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BF124201638006C0ED9 /* TeamsInfoCell.swift */; };
 		20C22BF424201638006C0ED9 /* TeamsInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C22BF224201638006C0ED9 /* TeamsInfoCell.xib */; };
-		20C22BF624201687006C0ED9 /* CompetitionTableInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BF524201687006C0ED9 /* CompetitionTableInfoCell.swift */; };
+		20C22BF624201687006C0ED9 /* TableInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C22BF524201687006C0ED9 /* TableInfoCell.swift */; };
 		20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00B241F5968008AFC88 /* AppDelegate.swift */; };
 		20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00F241F5968008AFC88 /* FixturesViewController.swift */; };
 		20C2A013241F5968008AFC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C2A011241F5968008AFC88 /* Main.storyboard */; };
@@ -72,6 +76,10 @@
 		202EC686241F826400E1570F /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
 		202EC688241F828D00E1570F /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		202EC689241F828D00E1570F /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		20842F752420178A006F3A57 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		20842F762420178A006F3A57 /* TeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
+		20842F792420179E006F3A57 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
+		20842F7B24201955006F3A57 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		20C22BC0241FAA29006C0ED9 /* CompetitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsViewController.swift; sourceTree = "<group>"; };
 		20C22BC1241FAA29006C0ED9 /* CompetitionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompetitionsViewController.xib; sourceTree = "<group>"; };
 		20C22BC4241FAD4C006C0ED9 /* CompetitionsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionsListViewModel.swift; sourceTree = "<group>"; };
@@ -89,7 +97,7 @@
 		20C22BEF24201545006C0ED9 /* TeamsInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsInfoViewModel.swift; sourceTree = "<group>"; };
 		20C22BF124201638006C0ED9 /* TeamsInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsInfoCell.swift; sourceTree = "<group>"; };
 		20C22BF224201638006C0ED9 /* TeamsInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamsInfoCell.xib; sourceTree = "<group>"; };
-		20C22BF524201687006C0ED9 /* CompetitionTableInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionTableInfoCell.swift; sourceTree = "<group>"; };
+		20C22BF524201687006C0ED9 /* TableInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInfoCell.swift; sourceTree = "<group>"; };
 		20C2A008241F5968008AFC88 /* SterlingAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SterlingAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C2A00B241F5968008AFC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C2A00F241F5968008AFC88 /* FixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +173,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		20842F7424201772006F3A57 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				20842F792420179E006F3A57 /* TeamViewModel.swift */,
+				20842F752420178A006F3A57 /* TeamCell.swift */,
+				20842F762420178A006F3A57 /* TeamCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		20C22BBF241FA9EB006C0ED9 /* Competitions */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +221,7 @@
 			children = (
 				20C22BDE241FC3E0006C0ED9 /* Cell */,
 				20C22BE3241FC47C006C0ED9 /* TableInfoViewModel.swift */,
-				20C22BF524201687006C0ED9 /* CompetitionTableInfoCell.swift */,
+				20C22BF524201687006C0ED9 /* TableInfoCell.swift */,
 				20C22BEA241FCCE9006C0ED9 /* TableInfoCell.xib */,
 			);
 			path = Table;
@@ -219,6 +237,7 @@
 		20C22BDD241FC2EF006C0ED9 /* Teams */ = {
 			isa = PBXGroup;
 			children = (
+				20842F7424201772006F3A57 /* Cell */,
 				20C22BEF24201545006C0ED9 /* TeamsInfoViewModel.swift */,
 				20C22BF124201638006C0ED9 /* TeamsInfoCell.swift */,
 				20C22BF224201638006C0ED9 /* TeamsInfoCell.xib */,
@@ -321,6 +340,7 @@
 				20C2A029241F5E77008AFC88 /* Competition.swift */,
 				202EC675241F6A1200E1570F /* Match.swift */,
 				20C22BE5241FC661006C0ED9 /* Standing.swift */,
+				20842F7B24201955006F3A57 /* Team.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -419,6 +439,7 @@
 				20C22BCE241FB3C7006C0ED9 /* CompetitionCell.xib in Resources */,
 				202EC68B241F828D00E1570F /* MatchTableViewCell.xib in Resources */,
 				20C22BE2241FC42C006C0ED9 /* TableCell.xib in Resources */,
+				20842F782420178A006F3A57 /* TeamCell.xib in Resources */,
 				20C22BEC241FCCE9006C0ED9 /* TableInfoCell.xib in Resources */,
 				202EC67B241F7C2600E1570F /* FixturesViewController.xib in Resources */,
 				20C22BC3241FAA29006C0ED9 /* CompetitionsViewController.xib in Resources */,
@@ -448,6 +469,8 @@
 				202EC684241F7FDA00E1570F /* UICollectionView+Identifiable.swift in Sources */,
 				202EC680241F7F7600E1570F /* ClassIdentifiable.swift in Sources */,
 				20C22BC5241FAD4C006C0ED9 /* CompetitionsListViewModel.swift in Sources */,
+				20842F7A2420179E006F3A57 /* TeamViewModel.swift in Sources */,
+				20842F7C24201955006F3A57 /* Team.swift in Sources */,
 				20C22BD5241FBA3B006C0ED9 /* CompetitionInfoViewModel.swift in Sources */,
 				202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */,
 				202EC68A241F828D00E1570F /* MatchTableViewCell.swift in Sources */,
@@ -455,9 +478,10 @@
 				20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */,
 				20C22BCD241FB3C7006C0ED9 /* CompetitionCell.swift in Sources */,
 				20C22BE8241FC81E006C0ED9 /* TableViewModel.swift in Sources */,
-				20C22BF624201687006C0ED9 /* CompetitionTableInfoCell.swift in Sources */,
+				20C22BF624201687006C0ED9 /* TableInfoCell.swift in Sources */,
 				20C22BC2241FAA29006C0ED9 /* CompetitionsViewController.swift in Sources */,
 				20C2A025241F5C8E008AFC88 /* Endpoints.swift in Sources */,
+				20842F772420178A006F3A57 /* TeamCell.swift in Sources */,
 				20C2A027241F5CB0008AFC88 /* NetworkService.swift in Sources */,
 				202EC687241F826400E1570F /* MatchViewModel.swift in Sources */,
 				202EC679241F71C200E1570F /* Extensions.swift in Sources */,

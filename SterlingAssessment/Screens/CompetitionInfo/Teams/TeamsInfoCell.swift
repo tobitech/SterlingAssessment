@@ -8,11 +8,54 @@
 
 import UIKit
 
-class TeamsInfoCell: UICollectionViewCell {
+class TeamsInfoCell: UICollectionViewCell,
+NibIdentifiable & ClassIdentifiable {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var viewModel: TeamsInfoViewModel? {
+        didSet {
+            setupViewModel()
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        setupCollectionView()
+    }
+    
+    private func setupViewModel() {
+        viewModel?.didLoadTeams = {[weak self] teams, error in
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
+        }
+    }
+    
+    private func setupCollectionView() {
+        collectionView.register(cellType: TeamCell.self)
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
+}
+
+extension TeamsInfoCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        viewModel?.numberOfItems() ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withCellType: TeamCell.self, forIndexPath: indexPath)
+        if let cellViewModel = viewModel?.viewModelForCell(at: indexPath) {
+            cell.viewModel = cellViewModel
+        }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = (collectionView.frame.width - 30) / 3
+        return CGSize(width: width, height: 164)
+    }
 }

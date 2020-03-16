@@ -30,12 +30,12 @@ class TeamsInfoViewModel {
         self.competitionId = competitionId
         self.teams = []
         
-        service.request(.competitionStandings(competitionId: competitionId)) {[weak self] result in
+        service.request(.competitionTeams(competitionId: competitionId)) {[weak self] result in
             switch result {
             case .success(let data):
                 do {
-                    let response = try JSONDecoder().decode(StandingsResponse.self, from: data)
-                    self?.teams = response.standings?[0].table ?? []
+                    let response = try JSONDecoder().decode(TeamsResponse.self, from: data)
+                    self?.teams = response.teams ?? []
                 } catch {
                     print(error)
                     self?.didLoadTeams?(nil, error.localizedDescription)
@@ -51,16 +51,12 @@ class TeamsInfoViewModel {
         return self.teams.count
     }
     
-    func viewModelForCell(at indexPath: IndexPath) -> TableViewModel? {
+    func viewModelForCell(at indexPath: IndexPath) -> TeamViewModel? {
         guard indexPath.row < teams.count else { return nil }
-        let table = teams[indexPath.row]
-        return TableViewModel(
-            position: "\(table.position ?? 0)",
-            crest: table.team?.crestUrl ?? "",
-            teamName: table.team?.name ?? "",
-            matchPlayed: "\(table.playedGames ?? 0)",
-            goalDifference: "\(table.goalDifference ?? 0)",
-            points: "\(table.points ?? 0)"
+        let team = teams[indexPath.row]
+        return TeamViewModel(
+            name: team.name ?? "",
+            crest: team.crestUrl ?? ""
         )
     }
 }

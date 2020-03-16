@@ -23,11 +23,6 @@ struct Match: Decodable {
     let awayTeam: Team?
 }
 
-struct Team: Decodable {
-    let name: String?
-    let crestUrl: String?
-}
-
 struct Score: Decodable {
     let winner: String?
     let duration: String?
