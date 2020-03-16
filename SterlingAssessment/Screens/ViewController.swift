@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .white
+        
+        title = "Fixtures"
+        
         let label = UILabel()
         label.text = "Welcome to the new app."
         label.translatesAutoresizingMaskIntoConstraints = false
