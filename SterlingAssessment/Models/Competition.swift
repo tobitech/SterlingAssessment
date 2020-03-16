@@ -8,6 +8,14 @@
 
 import Foundation
 
-struct Competition {
-    let name: String
+struct Competition: Decodable {
+    let id: Int?
+    let name: String?
+    let code: String?
+    let currentSeason: CurrentSeason?
+}
+
+struct CurrentSeason: Decodable {
+    let startDate: String?
+    let endDate: String?
 }

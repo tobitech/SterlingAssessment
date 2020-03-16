@@ -15,6 +15,7 @@
 		20C2A025241F5C8E008AFC88 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A024241F5C8E008AFC88 /* Endpoints.swift */; };
 		20C2A027241F5CB0008AFC88 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A026241F5CB0008AFC88 /* NetworkService.swift */; };
 		20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A029241F5E77008AFC88 /* Competition.swift */; };
+		20C2A02C241F6274008AFC88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A02B241F6274008AFC88 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		20C2A024241F5C8E008AFC88 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		20C2A026241F5CB0008AFC88 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		20C2A029241F5E77008AFC88 /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
+		20C2A02B241F6274008AFC88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				20C2A00B241F5968008AFC88 /* AppDelegate.swift */,
+				20C2A02B241F6274008AFC88 /* Constants.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				20C2A025241F5C8E008AFC88 /* Endpoints.swift in Sources */,
 				20C2A027241F5CB0008AFC88 /* NetworkService.swift in Sources */,
 				20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */,
+				20C2A02C241F6274008AFC88 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
