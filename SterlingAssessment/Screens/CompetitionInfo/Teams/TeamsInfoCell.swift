@@ -37,6 +37,7 @@ NibIdentifiable & ClassIdentifiable {
         collectionView.register(cellType: TeamCell.self)
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.contentInset = .init(top: 0, left: 0, bottom: 88, right: 0)
     }
 
 }

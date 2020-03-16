@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,8 +51,7 @@
 		20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A029241F5E77008AFC88 /* Competition.swift */; };
 		20C2A02C241F6274008AFC88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A02B241F6274008AFC88 /* Constants.swift */; };
 		20C2A034241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A033241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift */; };
-		DD43AA63E8DDCB1637FA9921 /* Pods_SterlingAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C490A62DF9626B11B30C4C2F /* Pods_SterlingAssessment.framework */; };
-		F8B34592029131B811A9F182 /* Pods_SterlingAssessmentUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEE78F958F5243F91039B9A /* Pods_SterlingAssessmentUnitTests.framework */; };
+		20DB198D242042160053C1A7 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 20DB198C242042160053C1A7 /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FC41DE8F131B7017D98896E /* Pods-SterlingAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SterlingAssessment.release.xcconfig"; path = "Target Support Files/Pods-SterlingAssessment/Pods-SterlingAssessment.release.xcconfig"; sourceTree = "<group>"; };
 		202EC670241F65C500E1570F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		202EC673241F694600E1570F /* FixturesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesListViewModel.swift; sourceTree = "<group>"; };
 		202EC675241F6A1200E1570F /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
@@ -115,11 +113,6 @@
 		20C2A031241F64DB008AFC88 /* SterlingAssessmentUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SterlingAssessmentUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C2A033241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SterlingAssessmentUnitTests.swift; sourceTree = "<group>"; };
 		20C2A035241F64DB008AFC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F478A3909EC95000DE3AFB7 /* Pods-SterlingAssessmentUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SterlingAssessmentUnitTests.release.xcconfig"; path = "Target Support Files/Pods-SterlingAssessmentUnitTests/Pods-SterlingAssessmentUnitTests.release.xcconfig"; sourceTree = "<group>"; };
-		740435E898E3EEAAFFCC7329 /* Pods-SterlingAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SterlingAssessment.debug.xcconfig"; path = "Target Support Files/Pods-SterlingAssessment/Pods-SterlingAssessment.debug.xcconfig"; sourceTree = "<group>"; };
-		84E16779626D8CC97EEB915D /* Pods-SterlingAssessmentUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SterlingAssessmentUnitTests.debug.xcconfig"; path = "Target Support Files/Pods-SterlingAssessmentUnitTests/Pods-SterlingAssessmentUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8EEE78F958F5243F91039B9A /* Pods_SterlingAssessmentUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SterlingAssessmentUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C490A62DF9626B11B30C4C2F /* Pods_SterlingAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SterlingAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD43AA63E8DDCB1637FA9921 /* Pods_SterlingAssessment.framework in Frameworks */,
+				20DB198D242042160053C1A7 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B34592029131B811A9F182 /* Pods_SterlingAssessmentUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +264,6 @@
 				20C2A032241F64DB008AFC88 /* SterlingAssessmentUnitTests */,
 				20C2A009241F5968008AFC88 /* Products */,
 				C5D8CBD6F892F26BD8470903 /* Pods */,
-				CC67832A832B1AF1A53883C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -369,22 +360,8 @@
 		C5D8CBD6F892F26BD8470903 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				740435E898E3EEAAFFCC7329 /* Pods-SterlingAssessment.debug.xcconfig */,
-				0FC41DE8F131B7017D98896E /* Pods-SterlingAssessment.release.xcconfig */,
-				84E16779626D8CC97EEB915D /* Pods-SterlingAssessmentUnitTests.debug.xcconfig */,
-				5F478A3909EC95000DE3AFB7 /* Pods-SterlingAssessmentUnitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		CC67832A832B1AF1A53883C4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C490A62DF9626B11B30C4C2F /* Pods_SterlingAssessment.framework */,
-				8EEE78F958F5243F91039B9A /* Pods_SterlingAssessmentUnitTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,17 +371,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20C2A01C241F5969008AFC88 /* Build configuration list for PBXNativeTarget "SterlingAssessment" */;
 			buildPhases = (
-				DEAF9443AF069887D657647D /* [CP] Check Pods Manifest.lock */,
 				20C2A004241F5968008AFC88 /* Sources */,
 				20C2A005241F5968008AFC88 /* Frameworks */,
 				20C2A006241F5968008AFC88 /* Resources */,
-				55A30F561FB084BFFA898781 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SterlingAssessment;
+			packageProductDependencies = (
+				20DB198C242042160053C1A7 /* SwiftPackageProductDependency */,
+			);
 			productName = SterlingAssessment;
 			productReference = 20C2A008241F5968008AFC88 /* SterlingAssessment.app */;
 			productType = "com.apple.product-type.application";
@@ -413,7 +391,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20C2A038241F64DB008AFC88 /* Build configuration list for PBXNativeTarget "SterlingAssessmentUnitTests" */;
 			buildPhases = (
-				68065BFEBF3837B7B1F1EBF0 /* [CP] Check Pods Manifest.lock */,
 				20C2A02D241F64DB008AFC88 /* Sources */,
 				20C2A02E241F64DB008AFC88 /* Frameworks */,
 				20C2A02F241F64DB008AFC88 /* Resources */,
@@ -456,6 +433,9 @@
 				Base,
 			);
 			mainGroup = 20C29FFF241F5968008AFC88;
+			packageReferences = (
+				20DB198B242042160053C1A7 /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = 20C2A009241F5968008AFC88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -494,70 +474,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		55A30F561FB084BFFA898781 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SterlingAssessment/Pods-SterlingAssessment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SterlingAssessment/Pods-SterlingAssessment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SterlingAssessment/Pods-SterlingAssessment-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68065BFEBF3837B7B1F1EBF0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SterlingAssessmentUnitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEAF9443AF069887D657647D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SterlingAssessment-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20C2A004241F5968008AFC88 /* Sources */ = {
@@ -752,7 +668,6 @@
 		};
 		20C2A01D241F5969008AFC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 740435E898E3EEAAFFCC7329 /* Pods-SterlingAssessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -772,7 +687,6 @@
 		};
 		20C2A01E241F5969008AFC88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FC41DE8F131B7017D98896E /* Pods-SterlingAssessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -792,7 +706,6 @@
 		};
 		20C2A039241F64DB008AFC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84E16779626D8CC97EEB915D /* Pods-SterlingAssessmentUnitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -813,7 +726,6 @@
 		};
 		20C2A03A241F64DB008AFC88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F478A3909EC95000DE3AFB7 /* Pods-SterlingAssessmentUnitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -863,6 +775,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20DB198B242042160053C1A7 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20DB198C242042160053C1A7 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20DB198B242042160053C1A7 /* RemoteSwiftPackageReference */;
+			productName = SDWebImageSVGCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20C2A000241F5968008AFC88 /* Project object */;
 }

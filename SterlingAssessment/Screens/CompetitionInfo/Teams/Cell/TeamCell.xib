@@ -17,15 +17,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="165" height="163"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcY-KN-VSt">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZ2-30-HtG">
                         <rect key="frame" x="32.5" y="8" width="100" height="100"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="100" id="PiA-1e-7Ya"/>
-                            <constraint firstAttribute="height" constant="100" id="igg-gU-KQ9"/>
+                            <constraint firstAttribute="height" constant="100" id="MVq-sl-EqB"/>
+                            <constraint firstAttribute="width" constant="100" id="uhq-fk-3BV"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyx-p4-ccp">
-                        <rect key="frame" x="8" y="116" width="149" height="39"/>
+                        <rect key="frame" x="8" y="139" width="149" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,17 +33,16 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="dcY-KN-VSt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="5p5-SD-sDn"/>
                 <constraint firstAttribute="bottom" secondItem="qyx-p4-ccp" secondAttribute="bottom" constant="8" id="GoC-DJ-d0k"/>
                 <constraint firstAttribute="trailing" secondItem="qyx-p4-ccp" secondAttribute="trailing" constant="8" id="QVv-Kr-Ccc"/>
-                <constraint firstItem="qyx-p4-ccp" firstAttribute="top" secondItem="dcY-KN-VSt" secondAttribute="bottom" constant="8" id="Tmu-FR-kOc"/>
-                <constraint firstItem="dcY-KN-VSt" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bmu-6r-kQM"/>
+                <constraint firstItem="cZ2-30-HtG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="SVu-eE-sCe"/>
+                <constraint firstItem="cZ2-30-HtG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="f2x-Lv-Z9t"/>
                 <constraint firstItem="qyx-p4-ccp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="vva-zM-Pbf"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="165" height="163"/>
             <connections>
-                <outlet property="crestImageView" destination="dcY-KN-VSt" id="msX-9q-ifz"/>
+                <outlet property="crestImageView" destination="cZ2-30-HtG" id="K5x-Tp-9fc"/>
                 <outlet property="nameLabel" destination="qyx-p4-ccp" id="Uk0-CO-5Pj"/>
             </connections>
             <point key="canvasLocation" x="223.91304347826087" y="124.88839285714285"/>
