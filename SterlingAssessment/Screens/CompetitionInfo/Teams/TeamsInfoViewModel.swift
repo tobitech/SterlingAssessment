@@ -1,5 +1,5 @@
 //
-//  CompetitionTableInfoViewModel.swift
+//  CompetitionTeamsInfoViewModel.swift
 //  SterlingAssessment
 //
 //  Created by Oluwatobi Omotayo on 16/03/2020.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-class CompetitionTableInfoViewModel {
+class TeamsInfoViewModel {
     
     // MARK: Output
-    private var tables: [Table] {
+    private var teams: [Team] {
         didSet {
-            self.didLoadTable?(tables, nil)
+            self.didLoadTeams?(teams, nil)
         }
     }
-    var didLoadTable: (([Table]?, String?) -> Void)?
+    var didLoadTeams: (([Team]?, String?) -> Void)?
     
     let competitionId: Int
     
@@ -28,32 +28,32 @@ class CompetitionTableInfoViewModel {
          service: NetworkService = NetworkService()) {
         self.service = service
         self.competitionId = competitionId
-        self.tables = []
+        self.teams = []
         
         service.request(.competitionStandings(competitionId: competitionId)) {[weak self] result in
             switch result {
             case .success(let data):
                 do {
                     let response = try JSONDecoder().decode(StandingsResponse.self, from: data)
-                    self?.tables = response.standings?[0].table ?? []
+                    self?.teams = response.standings?[0].table ?? []
                 } catch {
                     print(error)
-                    self?.didLoadTable?(nil, error.localizedDescription)
+                    self?.didLoadTeams?(nil, error.localizedDescription)
                 }
             case .failure(let error):
-                self?.didLoadTable?(nil, error.localizedDescription)
+                self?.didLoadTeams?(nil, error.localizedDescription)
             }
         }
     }
     
     // MARK: Public Methods
     func numberOfItems() -> Int {
-        return self.tables.count
+        return self.teams.count
     }
     
     func viewModelForCell(at indexPath: IndexPath) -> TableViewModel? {
-        guard indexPath.row < tables.count else { return nil }
-        let table = tables[indexPath.row]
+        guard indexPath.row < teams.count else { return nil }
+        let table = teams[indexPath.row]
         return TableViewModel(
             position: "\(table.position ?? 0)",
             crest: table.team?.crestUrl ?? "",

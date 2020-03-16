@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CompetitionTableInfoCell: UICollectionViewCell,
+class TableInfoCell: UICollectionViewCell,
 NibIdentifiable & ClassIdentifiable {
 
     @IBOutlet weak var tableView: UITableView!
     var refreshControl: UIRefreshControl!
     
-    var viewModel: CompetitionTableInfoViewModel? {
+    var viewModel: TableInfoViewModel? {
         didSet {
             setupViewModel()
         }
@@ -53,7 +53,7 @@ NibIdentifiable & ClassIdentifiable {
 
 }
 
-extension CompetitionTableInfoCell: UITableViewDataSource, UITableViewDelegate {
+extension TableInfoCell: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel?.numberOfItems() ?? 0
     }
