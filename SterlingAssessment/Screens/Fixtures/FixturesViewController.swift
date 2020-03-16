@@ -10,11 +10,21 @@ import UIKit
 
 class FixturesViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     var viewModel: FixturesListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         
+        title = "Fixtures"
+        
+        setupViewModel()
+        setupTableView()
+    }
+
+    private func setupViewModel() {
         viewModel = FixturesListViewModel()
         viewModel.didLoadFixtures = {[weak self] matches, message in
             print(matches?.count ?? 0)
@@ -24,22 +34,22 @@ class FixturesViewController: UIViewController {
                 }
             }
         }
-        
-        view.backgroundColor = .white
-        
-        title = "Fixtures"
-        
-        let label = UILabel()
-        label.text = "Welcome to the new app."
-        label.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(label)
-        
-        label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        
     }
-
+    
+    private func setupTableView() {
+        tableView.tableFooterView = UIView()
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
 
 }
 
+extension FixturesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+    }
+}

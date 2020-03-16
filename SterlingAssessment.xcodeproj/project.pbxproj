@@ -11,6 +11,11 @@
 		202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC673241F694600E1570F /* FixturesListViewModel.swift */; };
 		202EC676241F6A1200E1570F /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC675241F6A1200E1570F /* Match.swift */; };
 		202EC679241F71C200E1570F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC678241F71C200E1570F /* Extensions.swift */; };
+		202EC67B241F7C2600E1570F /* FixturesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202EC67A241F7C2600E1570F /* FixturesViewController.xib */; };
+		202EC67E241F7D3700E1570F /* NibIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC67D241F7D3700E1570F /* NibIdentifiable.swift */; };
+		202EC680241F7F7600E1570F /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC67F241F7F7600E1570F /* ClassIdentifiable.swift */; };
+		202EC682241F7FBF00E1570F /* UITableView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC681241F7FBF00E1570F /* UITableView+Identifiable.swift */; };
+		202EC684241F7FDA00E1570F /* UICollectionView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC683241F7FDA00E1570F /* UICollectionView+Identifiable.swift */; };
 		20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00B241F5968008AFC88 /* AppDelegate.swift */; };
 		20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00F241F5968008AFC88 /* FixturesViewController.swift */; };
 		20C2A013241F5968008AFC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C2A011241F5968008AFC88 /* Main.storyboard */; };
@@ -38,6 +43,11 @@
 		202EC673241F694600E1570F /* FixturesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesListViewModel.swift; sourceTree = "<group>"; };
 		202EC675241F6A1200E1570F /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		202EC678241F71C200E1570F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		202EC67A241F7C2600E1570F /* FixturesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixturesViewController.xib; sourceTree = "<group>"; };
+		202EC67D241F7D3700E1570F /* NibIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibIdentifiable.swift; sourceTree = "<group>"; };
+		202EC67F241F7F7600E1570F /* ClassIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassIdentifiable.swift; sourceTree = "<group>"; };
+		202EC681241F7FBF00E1570F /* UITableView+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Identifiable.swift"; sourceTree = "<group>"; };
+		202EC683241F7FDA00E1570F /* UICollectionView+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Identifiable.swift"; sourceTree = "<group>"; };
 		20C2A008241F5968008AFC88 /* SterlingAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SterlingAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C2A00B241F5968008AFC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C2A00F241F5968008AFC88 /* FixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
@@ -75,8 +85,10 @@
 		202EC672241F691A00E1570F /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				202EC685241F7FEF00E1570F /* Cell */,
 				202EC673241F694600E1570F /* FixturesListViewModel.swift */,
 				20C2A00F241F5968008AFC88 /* FixturesViewController.swift */,
+				202EC67A241F7C2600E1570F /* FixturesViewController.xib */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -84,9 +96,28 @@
 		202EC677241F71AF00E1570F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				202EC67C241F7D2800E1570F /* Identifiable */,
 				202EC678241F71C200E1570F /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		202EC67C241F7D2800E1570F /* Identifiable */ = {
+			isa = PBXGroup;
+			children = (
+				202EC67D241F7D3700E1570F /* NibIdentifiable.swift */,
+				202EC67F241F7F7600E1570F /* ClassIdentifiable.swift */,
+				202EC681241F7FBF00E1570F /* UITableView+Identifiable.swift */,
+				202EC683241F7FDA00E1570F /* UICollectionView+Identifiable.swift */,
+			);
+			path = Identifiable;
+			sourceTree = "<group>";
+		};
+		202EC685241F7FEF00E1570F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		20C29FFF241F5968008AFC88 = {
@@ -265,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202EC67B241F7C2600E1570F /* FixturesViewController.xib in Resources */,
 				20C2A018241F5969008AFC88 /* LaunchScreen.storyboard in Resources */,
 				20C2A015241F5969008AFC88 /* Assets.xcassets in Resources */,
 				20C2A013241F5968008AFC88 /* Main.storyboard in Resources */,
@@ -285,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202EC684241F7FDA00E1570F /* UICollectionView+Identifiable.swift in Sources */,
+				202EC680241F7F7600E1570F /* ClassIdentifiable.swift in Sources */,
 				202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */,
 				20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */,
 				20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */,
@@ -294,7 +328,9 @@
 				202EC676241F6A1200E1570F /* Match.swift in Sources */,
 				202EC671241F65C500E1570F /* TabBarController.swift in Sources */,
 				20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */,
+				202EC682241F7FBF00E1570F /* UITableView+Identifiable.swift in Sources */,
 				20C2A02C241F6274008AFC88 /* Constants.swift in Sources */,
+				202EC67E241F7D3700E1570F /* NibIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
