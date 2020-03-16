@@ -9,7 +9,7 @@
 import Foundation
 
 enum NetworkError: Error {
-    case invalidURL
+    case invalidRequest
     case network(Error)
     case invalidData
 }
@@ -18,12 +18,15 @@ class NetworkService {
     let urlSession = URLSession.shared
     
     func request(_ endpoint: Endpoint, completion: @escaping (Result<Data, Error>) -> Void) {
-        guard let url = endpoint.url else {
-            return completion(.failure(NetworkError.invalidURL))
+        guard var request = endpoint.request else {
+            return completion(.failure(NetworkError.invalidRequest))
         }
         
-        let task = urlSession.dataTask(with: url) { (data, response, error) in
-            
+        request.allHTTPHeaderFields = [
+            "X-Auth-Token": FootballApp.Credentials.APIToken
+        ]
+        
+        let task = urlSession.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 return completion(.failure(NetworkError.network(error)))
             }

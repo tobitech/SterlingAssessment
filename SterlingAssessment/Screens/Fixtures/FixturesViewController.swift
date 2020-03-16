@@ -8,10 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FixturesViewController: UIViewController {
+    
+    var viewModel: FixturesListViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel = FixturesListViewModel()
+        viewModel.didLoadFixtures = {[weak self] matches, message in
+            print(matches?.count ?? 0)
+            DispatchQueue.main.async {
+                if let message = message {
+                    self?.showAlert(title: "Error", message: message)
+                }
+            }
+        }
         
         view.backgroundColor = .white
         

@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		202EC671241F65C500E1570F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC670241F65C500E1570F /* TabBarController.swift */; };
+		202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC673241F694600E1570F /* FixturesListViewModel.swift */; };
+		202EC676241F6A1200E1570F /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC675241F6A1200E1570F /* Match.swift */; };
+		202EC679241F71C200E1570F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC678241F71C200E1570F /* Extensions.swift */; };
 		20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00B241F5968008AFC88 /* AppDelegate.swift */; };
-		20C2A010241F5968008AFC88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00F241F5968008AFC88 /* ViewController.swift */; };
+		20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A00F241F5968008AFC88 /* FixturesViewController.swift */; };
 		20C2A013241F5968008AFC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C2A011241F5968008AFC88 /* Main.storyboard */; };
 		20C2A015241F5969008AFC88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C2A014241F5969008AFC88 /* Assets.xcassets */; };
 		20C2A018241F5969008AFC88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C2A016241F5969008AFC88 /* LaunchScreen.storyboard */; };
@@ -32,9 +35,12 @@
 
 /* Begin PBXFileReference section */
 		202EC670241F65C500E1570F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		202EC673241F694600E1570F /* FixturesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesListViewModel.swift; sourceTree = "<group>"; };
+		202EC675241F6A1200E1570F /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		202EC678241F71C200E1570F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		20C2A008241F5968008AFC88 /* SterlingAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SterlingAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C2A00B241F5968008AFC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20C2A00F241F5968008AFC88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20C2A00F241F5968008AFC88 /* FixturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
 		20C2A012241F5968008AFC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20C2A014241F5969008AFC88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C2A017241F5969008AFC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202EC672241F691A00E1570F /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				202EC673241F694600E1570F /* FixturesListViewModel.swift */,
+				20C2A00F241F5968008AFC88 /* FixturesViewController.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		202EC677241F71AF00E1570F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				202EC678241F71C200E1570F /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		20C29FFF241F5968008AFC88 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +114,7 @@
 				20C2A022241F59DB008AFC88 /* Screens */,
 				20C2A028241F5D2D008AFC88 /* Models */,
 				20C2A023241F5C44008AFC88 /* Network Service */,
+				202EC677241F71AF00E1570F /* Utils */,
 				20C2A020241F59B6008AFC88 /* Supporting Files */,
 				20C2A01F241F59A0008AFC88 /* Resources */,
 			);
@@ -127,8 +151,8 @@
 		20C2A022241F59DB008AFC88 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				20C2A00F241F5968008AFC88 /* ViewController.swift */,
 				202EC670241F65C500E1570F /* TabBarController.swift */,
+				202EC672241F691A00E1570F /* Fixtures */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -146,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				20C2A029241F5E77008AFC88 /* Competition.swift */,
+				202EC675241F6A1200E1570F /* Match.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,10 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C2A010241F5968008AFC88 /* ViewController.swift in Sources */,
+				202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */,
+				20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */,
 				20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */,
 				20C2A025241F5C8E008AFC88 /* Endpoints.swift in Sources */,
 				20C2A027241F5CB0008AFC88 /* NetworkService.swift in Sources */,
+				202EC679241F71C200E1570F /* Extensions.swift in Sources */,
+				202EC676241F6A1200E1570F /* Match.swift in Sources */,
 				202EC671241F65C500E1570F /* TabBarController.swift in Sources */,
 				20C2A00C241F5968008AFC88 /* AppDelegate.swift in Sources */,
 				20C2A02C241F6274008AFC88 /* Constants.swift in Sources */,

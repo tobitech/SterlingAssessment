@@ -18,10 +18,10 @@ class TabBarController: UITabBarController {
     
     private func setupViewControllers() {
         // Fixtures
-        let fixturesNavController = templateNavController(unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: ViewController())
+        let fixturesNavController = templateNavController(unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: FixturesViewController())
         
         // Competitions
-        let competitionsNavController = templateNavController(unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: ViewController())
+        let competitionsNavController = templateNavController(unselectedImage: UIImage(), selectedImage: UIImage(), rootViewController: UIViewController())
         
         viewControllers = [fixturesNavController, competitionsNavController]
     }
