@@ -55,4 +55,14 @@ extension SquadViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = SquadHeaderView()
+        header.crestUrl = viewModel.teamCrest
+        return header
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 100.0
+    }
 }

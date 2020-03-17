@@ -26,6 +26,7 @@
 		20502DBD2420B65900C71CEA /* SquadMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DBC2420B65900C71CEA /* SquadMemberViewModel.swift */; };
 		20502DC02420B6BA00C71CEA /* SquadMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DBE2420B6BA00C71CEA /* SquadMemberCell.swift */; };
 		20502DC12420B6BA00C71CEA /* SquadMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20502DBF2420B6BA00C71CEA /* SquadMemberCell.xib */; };
+		20502DC32420BC4700C71CEA /* SquadHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DC22420BC4700C71CEA /* SquadHeaderView.swift */; };
 		20842F772420178A006F3A57 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20842F752420178A006F3A57 /* TeamCell.swift */; };
 		20842F782420178A006F3A57 /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20842F762420178A006F3A57 /* TeamCell.xib */; };
 		20842F7A2420179E006F3A57 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20842F792420179E006F3A57 /* TeamViewModel.swift */; };
@@ -94,6 +95,7 @@
 		20502DBC2420B65900C71CEA /* SquadMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadMemberViewModel.swift; sourceTree = "<group>"; };
 		20502DBE2420B6BA00C71CEA /* SquadMemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadMemberCell.swift; sourceTree = "<group>"; };
 		20502DBF2420B6BA00C71CEA /* SquadMemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquadMemberCell.xib; sourceTree = "<group>"; };
+		20502DC22420BC4700C71CEA /* SquadHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadHeaderView.swift; sourceTree = "<group>"; };
 		20842F752420178A006F3A57 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		20842F762420178A006F3A57 /* TeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
 		20842F792420179E006F3A57 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				20502DBC2420B65900C71CEA /* SquadMemberViewModel.swift */,
 				20502DBE2420B6BA00C71CEA /* SquadMemberCell.swift */,
 				20502DBF2420B6BA00C71CEA /* SquadMemberCell.xib */,
+				20502DC22420BC4700C71CEA /* SquadHeaderView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				20842F7C24201955006F3A57 /* Team.swift in Sources */,
 				20C22BD5241FBA3B006C0ED9 /* CompetitionInfoViewModel.swift in Sources */,
 				20ECD4D524204A0D009501EA /* FixturesInfoCell.swift in Sources */,
+				20502DC32420BC4700C71CEA /* SquadHeaderView.swift in Sources */,
 				20ECD4D2242049F7009501EA /* FixturesInfoViewModel.swift in Sources */,
 				20502DC02420B6BA00C71CEA /* SquadMemberCell.swift in Sources */,
 				202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */,

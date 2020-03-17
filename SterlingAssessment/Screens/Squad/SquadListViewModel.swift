@@ -12,6 +12,7 @@ class SquadListViewModel {
     
     // MARK: Outputs
     var teamTitle: String
+    var teamCrest: String
     var didLoadSquad: (([SquadMember]?, String?) -> Void)?
     
     // MARK: Private Properties
@@ -27,6 +28,7 @@ class SquadListViewModel {
     init(team: Team, service: NetworkService = NetworkService()) {
         self.team = team
         self.teamTitle = team.name ?? ""
+        self.teamCrest = team.crestUrl ?? ""
         self.service = service
         self.squad = []
         
