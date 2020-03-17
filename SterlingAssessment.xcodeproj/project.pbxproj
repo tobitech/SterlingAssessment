@@ -51,7 +51,10 @@
 		20C2A02A241F5E77008AFC88 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A029241F5E77008AFC88 /* Competition.swift */; };
 		20C2A02C241F6274008AFC88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A02B241F6274008AFC88 /* Constants.swift */; };
 		20C2A034241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A033241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift */; };
-		20DB198D242042160053C1A7 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 20DB198C242042160053C1A7 /* SwiftPackageProductDependency */; };
+		20DB198D242042160053C1A7 /* SDWebImageSVGCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 20DB198C242042160053C1A7 /* SDWebImageSVGCoder */; };
+		20ECD4D2242049F7009501EA /* FixturesInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ECD4D1242049F7009501EA /* FixturesInfoViewModel.swift */; };
+		20ECD4D524204A0D009501EA /* FixturesInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ECD4D324204A0D009501EA /* FixturesInfoCell.swift */; };
+		20ECD4D624204A0D009501EA /* FixturesInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20ECD4D424204A0D009501EA /* FixturesInfoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,9 @@
 		20C2A031241F64DB008AFC88 /* SterlingAssessmentUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SterlingAssessmentUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C2A033241F64DB008AFC88 /* SterlingAssessmentUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SterlingAssessmentUnitTests.swift; sourceTree = "<group>"; };
 		20C2A035241F64DB008AFC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20ECD4D1242049F7009501EA /* FixturesInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesInfoViewModel.swift; sourceTree = "<group>"; };
+		20ECD4D324204A0D009501EA /* FixturesInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesInfoCell.swift; sourceTree = "<group>"; };
+		20ECD4D424204A0D009501EA /* FixturesInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixturesInfoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DB198D242042160053C1A7 /* BuildFile in Frameworks */,
+				20DB198D242042160053C1A7 /* SDWebImageSVGCoder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +238,10 @@
 		20C22BDC241FC2DD006C0ED9 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
+				20ECD4D724204AEA009501EA /* Cell */,
+				20ECD4D1242049F7009501EA /* FixturesInfoViewModel.swift */,
+				20ECD4D324204A0D009501EA /* FixturesInfoCell.swift */,
+				20ECD4D424204A0D009501EA /* FixturesInfoCell.xib */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -357,6 +367,13 @@
 			path = SterlingAssessmentUnitTests;
 			sourceTree = "<group>";
 		};
+		20ECD4D724204AEA009501EA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C5D8CBD6F892F26BD8470903 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,7 +398,7 @@
 			);
 			name = SterlingAssessment;
 			packageProductDependencies = (
-				20DB198C242042160053C1A7 /* SwiftPackageProductDependency */,
+				20DB198C242042160053C1A7 /* SDWebImageSVGCoder */,
 			);
 			productName = SterlingAssessment;
 			productReference = 20C2A008241F5968008AFC88 /* SterlingAssessment.app */;
@@ -434,7 +451,7 @@
 			);
 			mainGroup = 20C29FFF241F5968008AFC88;
 			packageReferences = (
-				20DB198B242042160053C1A7 /* RemoteSwiftPackageReference */,
+				20DB198B242042160053C1A7 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */,
 			);
 			productRefGroup = 20C2A009241F5968008AFC88 /* Products */;
 			projectDirPath = "";
@@ -459,6 +476,7 @@
 				20C22BEC241FCCE9006C0ED9 /* TableInfoCell.xib in Resources */,
 				202EC67B241F7C2600E1570F /* FixturesViewController.xib in Resources */,
 				20C22BC3241FAA29006C0ED9 /* CompetitionsViewController.xib in Resources */,
+				20ECD4D624204A0D009501EA /* FixturesInfoCell.xib in Resources */,
 				20C2A018241F5969008AFC88 /* LaunchScreen.storyboard in Resources */,
 				20C22BF424201638006C0ED9 /* TeamsInfoCell.xib in Resources */,
 				20C2A015241F5969008AFC88 /* Assets.xcassets in Resources */,
@@ -488,6 +506,8 @@
 				20842F7A2420179E006F3A57 /* TeamViewModel.swift in Sources */,
 				20842F7C24201955006F3A57 /* Team.swift in Sources */,
 				20C22BD5241FBA3B006C0ED9 /* CompetitionInfoViewModel.swift in Sources */,
+				20ECD4D524204A0D009501EA /* FixturesInfoCell.swift in Sources */,
+				20ECD4D2242049F7009501EA /* FixturesInfoViewModel.swift in Sources */,
 				202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */,
 				202EC68A241F828D00E1570F /* MatchTableViewCell.swift in Sources */,
 				20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */,
@@ -777,7 +797,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		20DB198B242042160053C1A7 /* RemoteSwiftPackageReference */ = {
+		20DB198B242042160053C1A7 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSVGCoder";
 			requirement = {
@@ -788,9 +808,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		20DB198C242042160053C1A7 /* SwiftPackageProductDependency */ = {
+		20DB198C242042160053C1A7 /* SDWebImageSVGCoder */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 20DB198B242042160053C1A7 /* RemoteSwiftPackageReference */;
+			package = 20DB198B242042160053C1A7 /* XCRemoteSwiftPackageReference "SDWebImageSVGCoder" */;
 			productName = SDWebImageSVGCoder;
 		};
 /* End XCSwiftPackageProductDependency section */
