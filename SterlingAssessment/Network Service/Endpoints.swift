@@ -48,6 +48,13 @@ extension Endpoint {
             queryItems: []
         )
     }
+    
+    static func teamSquad(teamId: Int) -> Endpoint {
+        return Endpoint (
+            path: "teams/\(teamId)",
+            queryItems: []
+        )
+    }
 }
 
 extension Endpoint {

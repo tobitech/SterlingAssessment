@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol TeamsInfoCellDelegate: class {
+    func didSelect(team: Team)
+}
+
 class TeamsInfoCell: UICollectionViewCell,
 NibIdentifiable & ClassIdentifiable {
     
@@ -18,6 +22,8 @@ NibIdentifiable & ClassIdentifiable {
             setupViewModel()
         }
     }
+    
+    weak var delegate: TeamsInfoCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -58,5 +64,11 @@ extension TeamsInfoCell: UICollectionViewDataSource, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = (collectionView.frame.width - 30) / 3
         return CGSize(width: width, height: 164)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let team = viewModel?.team(at: indexPath.row) {
+            self.delegate?.didSelect(team: team)
+        }
     }
 }

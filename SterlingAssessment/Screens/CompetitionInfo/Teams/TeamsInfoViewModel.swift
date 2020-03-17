@@ -51,9 +51,13 @@ class TeamsInfoViewModel {
         return self.teams.count
     }
     
+    func team(at index: Int) -> Team? {
+        guard index < self.teams.count else { return nil }
+        return teams[index]
+    }
+    
     func viewModelForCell(at indexPath: IndexPath) -> TeamViewModel? {
-        guard indexPath.row < teams.count else { return nil }
-        let team = teams[indexPath.row]
+        guard let team = team(at: indexPath.row) else { return nil }
         return TeamViewModel(
             name: team.name ?? "",
             crest: team.crestUrl ?? ""

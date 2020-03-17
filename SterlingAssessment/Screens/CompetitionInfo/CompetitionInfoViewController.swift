@@ -61,6 +61,7 @@ extension CompetitionInfoViewController: UICollectionViewDataSource, UICollectio
             let cell = collectionView.dequeueReusableCell(withCellType: TeamsInfoCell.self, forIndexPath: indexPath)
             let cellViewModel = TeamsInfoViewModel(competitionId: viewModel.competition.id ?? 0)
             cell.viewModel = cellViewModel
+            cell.delegate = self
             return cell
         }
     }
@@ -72,5 +73,15 @@ extension CompetitionInfoViewController: UICollectionViewDataSource, UICollectio
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let index = Int(targetContentOffset.pointee.x / view.frame.width)
         self.segmentedControl.selectedSegmentIndex = index
+    }
+}
+
+extension CompetitionInfoViewController: TeamsInfoCellDelegate {
+    func didSelect(team: Team) {
+        let vm = SquadListViewModel(team: team)
+        let vc = SquadViewController.initFromNib()
+        vc.viewModel = vm
+        let navController = UINavigationController(rootViewController: vc)
+        self.present(navController, animated: true)
     }
 }

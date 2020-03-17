@@ -19,6 +19,13 @@
 		202EC687241F826400E1570F /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC686241F826400E1570F /* MatchViewModel.swift */; };
 		202EC68A241F828D00E1570F /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202EC688241F828D00E1570F /* MatchTableViewCell.swift */; };
 		202EC68B241F828D00E1570F /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202EC689241F828D00E1570F /* MatchTableViewCell.xib */; };
+		20502DB42420B32D00C71CEA /* SquadListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DB32420B32D00C71CEA /* SquadListViewModel.swift */; };
+		20502DB62420B3BF00C71CEA /* SquadMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DB52420B3BF00C71CEA /* SquadMember.swift */; };
+		20502DB92420B5BD00C71CEA /* SquadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DB72420B5BD00C71CEA /* SquadViewController.swift */; };
+		20502DBA2420B5BD00C71CEA /* SquadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20502DB82420B5BD00C71CEA /* SquadViewController.xib */; };
+		20502DBD2420B65900C71CEA /* SquadMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DBC2420B65900C71CEA /* SquadMemberViewModel.swift */; };
+		20502DC02420B6BA00C71CEA /* SquadMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20502DBE2420B6BA00C71CEA /* SquadMemberCell.swift */; };
+		20502DC12420B6BA00C71CEA /* SquadMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20502DBF2420B6BA00C71CEA /* SquadMemberCell.xib */; };
 		20842F772420178A006F3A57 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20842F752420178A006F3A57 /* TeamCell.swift */; };
 		20842F782420178A006F3A57 /* TeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20842F762420178A006F3A57 /* TeamCell.xib */; };
 		20842F7A2420179E006F3A57 /* TeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20842F792420179E006F3A57 /* TeamViewModel.swift */; };
@@ -80,6 +87,13 @@
 		202EC686241F826400E1570F /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
 		202EC688241F828D00E1570F /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		202EC689241F828D00E1570F /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		20502DB32420B32D00C71CEA /* SquadListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadListViewModel.swift; sourceTree = "<group>"; };
+		20502DB52420B3BF00C71CEA /* SquadMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadMember.swift; sourceTree = "<group>"; };
+		20502DB72420B5BD00C71CEA /* SquadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadViewController.swift; sourceTree = "<group>"; };
+		20502DB82420B5BD00C71CEA /* SquadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquadViewController.xib; sourceTree = "<group>"; };
+		20502DBC2420B65900C71CEA /* SquadMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadMemberViewModel.swift; sourceTree = "<group>"; };
+		20502DBE2420B6BA00C71CEA /* SquadMemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadMemberCell.swift; sourceTree = "<group>"; };
+		20502DBF2420B6BA00C71CEA /* SquadMemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquadMemberCell.xib; sourceTree = "<group>"; };
 		20842F752420178A006F3A57 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		20842F762420178A006F3A57 /* TeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCell.xib; sourceTree = "<group>"; };
 		20842F792420179E006F3A57 /* TeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewModel.swift; sourceTree = "<group>"; };
@@ -177,6 +191,27 @@
 				202EC686241F826400E1570F /* MatchViewModel.swift */,
 				202EC688241F828D00E1570F /* MatchTableViewCell.swift */,
 				202EC689241F828D00E1570F /* MatchTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		20502DB22420B30800C71CEA /* Squad */ = {
+			isa = PBXGroup;
+			children = (
+				20502DBB2420B64600C71CEA /* Cell */,
+				20502DB32420B32D00C71CEA /* SquadListViewModel.swift */,
+				20502DB72420B5BD00C71CEA /* SquadViewController.swift */,
+				20502DB82420B5BD00C71CEA /* SquadViewController.xib */,
+			);
+			path = Squad;
+			sourceTree = "<group>";
+		};
+		20502DBB2420B64600C71CEA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				20502DBC2420B65900C71CEA /* SquadMemberViewModel.swift */,
+				20502DBE2420B6BA00C71CEA /* SquadMemberCell.swift */,
+				20502DBF2420B6BA00C71CEA /* SquadMemberCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -334,6 +369,7 @@
 				202EC672241F691A00E1570F /* Fixtures */,
 				20C22BBF241FA9EB006C0ED9 /* Competitions */,
 				20C22BCF241FB663006C0ED9 /* CompetitionInfo */,
+				20502DB22420B30800C71CEA /* Squad */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -354,6 +390,7 @@
 				202EC675241F6A1200E1570F /* Match.swift */,
 				20C22BE5241FC661006C0ED9 /* Standing.swift */,
 				20842F7B24201955006F3A57 /* Team.swift */,
+				20502DB52420B3BF00C71CEA /* SquadMember.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -471,12 +508,14 @@
 				20C22BD3241FB6D4006C0ED9 /* CompetitionInfoViewController.xib in Resources */,
 				20C22BCE241FB3C7006C0ED9 /* CompetitionCell.xib in Resources */,
 				202EC68B241F828D00E1570F /* MatchTableViewCell.xib in Resources */,
+				20502DC12420B6BA00C71CEA /* SquadMemberCell.xib in Resources */,
 				20C22BE2241FC42C006C0ED9 /* TableCell.xib in Resources */,
 				20842F782420178A006F3A57 /* TeamCell.xib in Resources */,
 				20C22BEC241FCCE9006C0ED9 /* TableInfoCell.xib in Resources */,
 				202EC67B241F7C2600E1570F /* FixturesViewController.xib in Resources */,
 				20C22BC3241FAA29006C0ED9 /* CompetitionsViewController.xib in Resources */,
 				20ECD4D624204A0D009501EA /* FixturesInfoCell.xib in Resources */,
+				20502DBA2420B5BD00C71CEA /* SquadViewController.xib in Resources */,
 				20C2A018241F5969008AFC88 /* LaunchScreen.storyboard in Resources */,
 				20C22BF424201638006C0ED9 /* TeamsInfoCell.xib in Resources */,
 				20C2A015241F5969008AFC88 /* Assets.xcassets in Resources */,
@@ -501,13 +540,16 @@
 				20C22BD2241FB6D4006C0ED9 /* CompetitionInfoViewController.swift in Sources */,
 				20C22BE4241FC47C006C0ED9 /* TableInfoViewModel.swift in Sources */,
 				202EC684241F7FDA00E1570F /* UICollectionView+Identifiable.swift in Sources */,
+				20502DBD2420B65900C71CEA /* SquadMemberViewModel.swift in Sources */,
 				202EC680241F7F7600E1570F /* ClassIdentifiable.swift in Sources */,
+				20502DB62420B3BF00C71CEA /* SquadMember.swift in Sources */,
 				20C22BC5241FAD4C006C0ED9 /* CompetitionsListViewModel.swift in Sources */,
 				20842F7A2420179E006F3A57 /* TeamViewModel.swift in Sources */,
 				20842F7C24201955006F3A57 /* Team.swift in Sources */,
 				20C22BD5241FBA3B006C0ED9 /* CompetitionInfoViewModel.swift in Sources */,
 				20ECD4D524204A0D009501EA /* FixturesInfoCell.swift in Sources */,
 				20ECD4D2242049F7009501EA /* FixturesInfoViewModel.swift in Sources */,
+				20502DC02420B6BA00C71CEA /* SquadMemberCell.swift in Sources */,
 				202EC674241F694600E1570F /* FixturesListViewModel.swift in Sources */,
 				202EC68A241F828D00E1570F /* MatchTableViewCell.swift in Sources */,
 				20C2A010241F5968008AFC88 /* FixturesViewController.swift in Sources */,
@@ -521,6 +563,7 @@
 				20C2A027241F5CB0008AFC88 /* NetworkService.swift in Sources */,
 				202EC687241F826400E1570F /* MatchViewModel.swift in Sources */,
 				202EC679241F71C200E1570F /* Extensions.swift in Sources */,
+				20502DB42420B32D00C71CEA /* SquadListViewModel.swift in Sources */,
 				202EC676241F6A1200E1570F /* Match.swift in Sources */,
 				202EC671241F65C500E1570F /* TabBarController.swift in Sources */,
 				20C22BF324201638006C0ED9 /* TeamsInfoCell.swift in Sources */,
@@ -529,6 +572,7 @@
 				20C22BE1241FC42C006C0ED9 /* TableCell.swift in Sources */,
 				20C22BF024201545006C0ED9 /* TeamsInfoViewModel.swift in Sources */,
 				202EC682241F7FBF00E1570F /* UITableView+Identifiable.swift in Sources */,
+				20502DB92420B5BD00C71CEA /* SquadViewController.swift in Sources */,
 				20C2A02C241F6274008AFC88 /* Constants.swift in Sources */,
 				202EC67E241F7D3700E1570F /* NibIdentifiable.swift in Sources */,
 			);
