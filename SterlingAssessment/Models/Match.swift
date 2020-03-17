@@ -16,8 +16,8 @@ struct MatchesResponse: Decodable {
 // MARK: Main Models
 struct Match: Decodable {
     let id: Int?
-    let competition: Competition
-    let score: Score
+    let competition: Competition?
+    let score: Score?
     let utcDate: String?
     let homeTeam: Team?
     let awayTeam: Team?

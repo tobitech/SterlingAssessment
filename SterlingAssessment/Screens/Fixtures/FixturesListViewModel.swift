@@ -53,8 +53,8 @@ class FixturesListViewModel {
         let vm = MatchViewModel(
             homeTeam: match.homeTeam?.name ?? "",
             awayTeam: match.awayTeam?.name ?? "",
-            homeTeamScore: "\(match.score.fullTime.homeTeam ?? 0)",
-            awayTeamScore: "\(match.score.fullTime.awayTeam ?? 0)",
+            homeTeamScore: "\(match.score?.fullTime.homeTeam ?? 0)",
+            awayTeamScore: "\(match.score?.fullTime.awayTeam ?? 0)",
             matchTime: formatDate(utcDate: match.utcDate ?? "") ?? "-:-",
             currentTime: "00\""
         )
